@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Grant execute permission to Gradle wrapper
-RUN chmod +x ./gradlew
+RUN chmod +x gradlew
 
 # Build the application
 RUN ./gradlew build
